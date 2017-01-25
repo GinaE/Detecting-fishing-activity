@@ -1,2 +1,3 @@
-# Innovation_in_science
-Project aimed to analyze, describe and predict the impact of scientific publications.  I study here the corpus of abstracts, citations, authors and author affiliations for millions of publications made in the UK since 1980. Using graph theory and NLP I will be able to identify what type of collaborations result in a more innovative paper.
+# Fish-Net
+In this project I will collaborate with globalfishingwatch.org, to create algorithms aimed to detect fishing activity in the ocean. We will use satellite AIS data (https://en.wikipedia.org/wiki/Automatic_identification_system) collected from different vessels around the world.
+
