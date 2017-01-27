@@ -10,7 +10,7 @@ aws configure
 
 Enter the correct values of:
 
-Access key ID: ______\n
+Access key ID: ______
 secret access key: _____
 region name: us-east-1
 output format: text
