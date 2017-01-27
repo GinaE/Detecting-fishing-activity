@@ -8,10 +8,14 @@ sudo pip install awscli
 
 aws configure
 
-Give the correct values:
+Enter the correct values of:
+
 Access key ID: ______
+
 secret access key: _____
+
 region name: us-east-1
+
 output format: text
 
 aws s3 sync s3://bucket local_folder
