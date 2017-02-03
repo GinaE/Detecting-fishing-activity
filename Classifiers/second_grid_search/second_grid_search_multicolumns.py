@@ -10,6 +10,9 @@ import os
 import sys
 
 '''
+Routine that evaluates the model on 20.000 points (splitted on train/cross/validate sets) and adding incremental
+time window sizes: From 1800 s = 0.5h, to 86400 s = 24h, averages.
+
 run in the console like:
 >> python second_grid_search.py model_1 RF longliners 
 
