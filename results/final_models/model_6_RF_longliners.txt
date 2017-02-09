@@ -1,0 +1,28 @@
+model_6
+RF
+longliners
+course_norm_sin_cos + window_1800 + window_3600 + window_10800 + window_21600 + window_43200 + window_86400
+
+==================================================
+
+Best parameters for model_6_RF_longliners are: 
+ {'max_features': 7, 'min_samples_split': 15, 'n_estimators': 50}
+
+==================================================
+(data) | Accuracy | Recall | F1-Score |
+--------------------------------------------------
+train | 0.98090 | 0.99260 | 0.98112 |
+cross | 0.89860 | 0.92619 | 0.92354 |
+==================================================
+
+top features for best classifier:
+measure_coursestddev_43200
+measure_coursestddev_43200_log
+measure_speedstddev_43200
+measure_coursestddev_86400_log
+measure_speedstddev_86400_log
+measure_speedstddev_21600
+measure_speedavg_1800
+measure_coursestddev_86400
+measure_speedavg_86400
+measure_speedstddev_43200_log
