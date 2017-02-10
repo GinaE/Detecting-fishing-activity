@@ -45,7 +45,7 @@ def plot_track_predictions(df,mod_num,mmsi,pickeled_model,up,down,left,right):
 	# mod_num = 'model_4'
 	# pickeled_model = 'final_models/model_3_RF_trawlers.pkl'
 
-	fig_name = 'best_reconstructions/' + str(mmsi) +'_transparency_' + pickeled_model[len('final_models/'):-len('.pkl')]+'.png'
+	fig_name = '../results/best_reconstructions/' + str(mmsi) +'_transparency_' + pickeled_model[len('../results/final_models/'):-len('.pkl')]+'.png'
 
 	# # ====DEBUGGER=======
 	# import pdb, sys
@@ -123,7 +123,7 @@ if __name__ == '__main__':
 	for gear in gears:
 		if gear == 'longliners':
 			mod_num = 'model_6'
-			pickeled_model = 'final_models/model_6_RF_longliners.pkl'
+			pickeled_model = '../results/final_models/model_6_RF_longliners.pkl'
 			# best_mmsi = 134393118622376  # too small latitude span.
 			best_mmsi = 36427802545466 # Around South Africa
 			# best_mmsi = 207649577408623  # close to micronesia
@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
 		elif gear == 'trawlers':
 			mod_num = 'model_3'
-			pickeled_model = 'final_models/model_3_RF_trawlers.pkl'
+			pickeled_model = '../results/final_models/model_3_RF_trawlers.pkl'
 			best_mmsi = 229561307305795 # south of Spain
 			up = 0.5
 			down = 0.5
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
 		else:
 			mod_num = 'model_3'
-			pickeled_model = 'final_models/model_3_GBC_purse_seines.pkl'
+			pickeled_model = '../results/final_models/model_3_GBC_purse_seines.pkl'
 			best_mmsi = 10880510825243 # Japan
 			up = 10
 			down = 10
