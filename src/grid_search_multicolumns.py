@@ -86,11 +86,11 @@ if 'feature_importances_' in dir(best_classifier):
 	else:
 		important_features = cols[feature_importances[-1:-11:-1]]
 
-pickle_name = 'results/' + full_model_name + '.pkl'
+pickle_name = '../results/' + full_model_name + '.pkl'
 with open(pickle_name, 'w') as pklf:
 	pickle.dump(best_classifier, pklf)
 
-output_file = 'results/' + full_model_name + '.txt'
+output_file = '../results/' + full_model_name + '.txt'
 
 with open(output_file,'wb') as f:
 
