@@ -6,7 +6,7 @@ In this project I will collaborate with [Global Fishing Watch](http://www.global
 
 Overfishing and illegal fishing are becoming big problems around the world. There are records of intensive and often illegal fishing of West Africa’s waters by Asian and European fleets that reduce the regular catch for the local populations, increasing their poverty levels. In Sierra Leone alone there are two to three times more ships fishing in the country’s near-shore waters than have licenses to do so. 
 
-“Being able to see which vessels are fishing where would be a tremendous help in reducing illegal fishing,” says Josephus Mamie, head of Sierra Leone’s Fisheries Research Unit. [2]
+“Being able to see which vessels are fishing where would be a tremendous help in reducing illegal fishing,” says Josephus Mamie, head of Sierra Leone’s Fisheries Research Unit. [1]
 
 Global Fishing Watch (GFW) is an organization that analyzes data from the Automatic Identification System (AIS), which is collected by satellites and terrestrial receivers, to identify apparent fishing behavior based on the movement of vessels over time.
 
@@ -15,7 +15,7 @@ Global Fishing Watch (GFW) is an organization that analyzes data from the Automa
 
 AIS system was put in place to guarantee the safety of vessels, it provides collisions avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
 
-Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [3] 20M of data points are produced per day this way. But in my case I will have an aggregate of data that has been already labeled by different experts and by graduate students on Dalhousie University in Halifax. 
+Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [2] 20M of data points are produced per day this way. But in my case I will have an aggregate of data that has been already labeled by different experts and by graduate students on Dalhousie University in Halifax. 
 
 Training data was kindly made available to me by Mr. David Kroodsma, from SkyTruth one of the collaborating partners.
 
@@ -34,5 +34,10 @@ The team at Global Fishing Watch needs help with the algorithm that identifies w
 
 One benchmark result that I expect to pick up from the AIS data is the following heuristic: If the trajectories of the vessel present “wiggles”, or situations in which they stayed for a long time around the same place in the open ocean, it may be because they are fishing. If, on the other hand, the trajectories are straight, the vessels are either cargo ships, passenger vessels, or they are simply no fishing.
 
+
+## References
+
+[1]  http://www.ipsnews.net/2016/09/new-public-website-offers-detailed-view-of-industrial-fishing/
+[2]  http://skytruth.org/, https://en.wikipedia.org/wiki/Automatic_identification_system
 
 
