@@ -46,7 +46,7 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 		Grid search for each model specified on the models_dict dictionary. It takes 3 arguments, run it in the console like this:
 
-		>> python second_grid_search.py model_number model_type gear_type 
+		>> python grid_search_multicolumns.py model_number model_type gear_type 
 
 		The possible values for the arguments are:
 
@@ -56,7 +56,7 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 		For example, to run the grid search on a Random Forest (RF), for model_1 and the longliners, you should write:
 
-		>> python second_grid_search.py model_1 RF longliners 
+		>> python grid_search_multicolumns.py model_1 RF longliners 
 
 
 	- reconstructing_tracks.py
