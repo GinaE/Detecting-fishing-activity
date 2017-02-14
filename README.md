@@ -33,14 +33,15 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 ## Repo Structure
 
-- data/labeled: Will have the '.npz' labeled data files.
-- images: Images used on the web app
+- data/labeled - Will have the '.npz' labeled data files.
+- images - Images used on the web app
 
 - results: 
 	- best_reconstructions: Images of the recostructed tracks superimposed to maps.
 	- final_models: Best performing models, you can find the pickle files here on the '.pkl' files, as well as a summary of their performance on the '.txt' files.
+	- models_performance.png: 
 
-- src: The scripts used in the analysis
+- src - The scripts used in the analysis
 
 	- grid_search_multicolumns.py
 
@@ -52,7 +53,7 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 		|   Argument   |						 values 								|
 		|--------------|:-------------------------------------------------------------:	|
-		| model_number | ['model_1','model_1','model_1','model_1','model_1','model_1'] 	|
+		| model_number | ['model_1','model_2','model_3','model_4','model_5','model_6'] 	|
 		| model_type   | ['RF','GBC']               									|
 		| gear_type    | ['longliners','trawlers','purse_seines'] 						|
 
@@ -62,7 +63,10 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 
 	- reconstructing_tracks.py
+		For a given mmsi (vessel identification number) this script will generate two images of the tracks, one indicationg the actual fishing sites (in green) and another images with the predicted fishing sites (in blue.) 
+		The images then will be kept on ../results/best_reconstructions
 
-
+	- results_analysis.py
+		Produces the models_performance.png on the results folder. This is a graph of the F1-scores for the different models.
 
 
