@@ -11,13 +11,13 @@ Overfishing and illegal fishing are becoming big problems around the world. Ther
 Global Fishing Watch (GFW) is an organization that analyzes data from the Automatic Identification System (AIS), which is collected by satellites and terrestrial receivers, to identify apparent fishing behavior based on the movement of vessels over time.
 
 
-## Data
+### Data
 
 AIS system was put in place to guarantee the safety of vessels, it provides collisions avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
 
 Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [2] 20M of data points are produced per day this way. But in my case I will have an aggregate of data that has been already labeled by different experts and by graduate students on Dalhousie University in Halifax. 
 
-Training data was kindly made available to me by Mr. David Kroodsma, from SkyTruth one of the collaborating partners.
+Training data was kindly made available to me by David Kroodsma, from SkyTruth, one of the collaborating partners of Global Fishing Watch.
 
 Notes on the data:
 
@@ -26,18 +26,40 @@ The intervals of data acquisition is not constant. There may be gaps when the ve
 When there is good coverage the time intervals still vary from 2 seconds to 2 minutes, due to differences in satellite coverage around the world and signal interference.
 
 
-
-
-## The problem: “Deciding when fishing is happening using AIS data”
-
-The team at Global Fishing Watch needs help with the algorithm that identifies when vessels are fishing. They also would like to have a sense of how well does the algorithm perform in different parts of the world (i.e. less satellite coverage, increased interference near busy ports, etc)
-
-One benchmark result that I expect to pick up from the AIS data is the following heuristic: If the trajectories of the vessel present “wiggles”, or situations in which they stayed for a long time around the same place in the open ocean, it may be because they are fishing. If, on the other hand, the trajectories are straight, the vessels are either cargo ships, passenger vessels, or they are simply no fishing.
-
-
-## References
+### References
 
 [1]  http://www.ipsnews.net/2016/09/new-public-website-offers-detailed-view-of-industrial-fishing/
 [2]  http://skytruth.org/, https://en.wikipedia.org/wiki/Automatic_identification_system
+
+## Repo Structure
+
+- data/labeled: Will have the '.npz' labeled data files.
+- images: Images used on the web app
+
+- results: 
+	- best_reconstructions: Images of the recostructed tracks superimposed to maps.
+	- final_models: Best performing models, you can find the pickle files here on the '.pkl' files, as well as a summary of their performance on the '.txt' files.
+
+- src: The scripts used in the analysis
+
+	- grid_search_multicolumns.py
+
+	Grid search for each model specified on the models_dict dictionary. It takes 3 arguments, run it in the console like this:
+	'''	
+	>> python second_grid_search.py <model_number> <model_type> <gear_type> 
+	'''
+	The possible values are:
+	<model_number> : ['model_1','model_1','model_1','model_1','model_1','model_1']
+	<model_type> : ['RF','GBC']
+	<gear_type> : ['longliners','trawlers','purse_seines']
+
+	For example, to run the grid search on a Random Forest (RF), for model_1 and the longliners, you should write:
+	'''
+	>> python second_grid_search.py model_1 RF longliners 
+	'''
+
+	- reconstructing_tracks.py
+
+
 
 
