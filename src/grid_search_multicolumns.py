@@ -16,7 +16,7 @@ Routine that evaluates the model on 20.000 points (splitted on train/cross/valid
 time window sizes: From 1800 s = 0.5h, to 86400 s = 24h, averages.
 
 run in the console like:
->> python second_grid_search.py model_1 RF longliners 
+>> python grid_search_multicolumns.py model_1 RF longliners 
 
 I decided to take away the Lat and Lon features as well as the features related with distance to land.
 '''
@@ -110,11 +110,6 @@ with open(output_file,'wb') as f:
 	f.write("top features for best classifier:\n")
 	for item in important_features:
 		f.write(str(item) +'\n')			
-
-
-# print "Train accuracy =  {}".format(best_train_score) 
-# print "Cross accuracy =  {}".format(best_cross_score)
-
 
 
 
