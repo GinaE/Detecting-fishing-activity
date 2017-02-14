@@ -35,8 +35,9 @@ def plot_results(metric,data_subset,metric_df):
 	plt.legend(col_names,loc='best')  # 7 --> right centered
 	plt.title(metric+' scores on '+data_subset+' subset')
 	# plt.subplot(1,3,1)
-	plt.show()
-	# pl.savefig('model_comparison'+metric+'.png')
+	# plt.show()
+	plt.savefig('model_comparison'+metric+'.png')
+	plt.savefig('../results/models_performance.png')
 
 
 gears = ['longliners','trawlers','purse_seines']
@@ -126,11 +127,6 @@ for gear in gears:
 		f1_metrics_df_cross[col_] = f1_cross_array  
 		f1_metrics_df_test[col_] = f1_test_array
 
-# # # ====DEBUGGER=======
-# import pdb, sys
-# pdb.set_trace()
-
-# plot_results('Accuracy','test',acc_metrics_df_test)
 plot_results('F1 score','train',f1_metrics_df_train)
 
 
