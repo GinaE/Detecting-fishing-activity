@@ -4,26 +4,26 @@ In this project I will collaborate with [Global Fishing Watch](http://www.global
 
 ## Motivation
 
-Overfishing and illegal fishing are becoming big problems around the world. There are records of intensive and often illegal fishing of West Africa’s waters by Asian and European fleets that reduce the regular catch for the local populations, increasing their poverty levels. In Sierra Leone alone there are two to three times more ships fishing in the country’s near-shore waters than have licenses to do so. 
-
-“Being able to see which vessels are fishing where would be a tremendous help in reducing illegal fishing,” says Josephus Mamie, head of Sierra Leone’s Fisheries Research Unit. [1]
+Overfishing and illegal fishing are becoming big problems around the world. For example, there are many records of intensive and often illegal fishing of West Africa’s waters by Asian and European fleets that reduce the regular catch for the local populations, increasing their poverty levels. “Being able to see which vessels are fishing where would be a tremendous help in reducing illegal fishing,” says Josephus Mamie, head of Sierra Leone’s Fisheries Research Unit. [1]
 
 Global Fishing Watch (GFW) is an organization that analyzes data from the Automatic Identification System (AIS), which is collected by satellites and terrestrial receivers, to identify apparent fishing behavior based on the movement of vessels over time.
 
 
 ### Data
 
-AIS system was put in place to guarantee the safety of vessels, it provides collisions avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
+AIS system was put in place to guarantee the safety of vessels, it provides collision avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
 
-Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [2] 20M of data points are produced per day this way. But in my case I will have an aggregate of data that has been already labeled by different experts and by graduate students on Dalhousie University in Halifax. 
+Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [2] 20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
 
-Training data was kindly made available to me by David Kroodsma, from SkyTruth, one of the collaborating partners of Global Fishing Watch.
+The data set was kindly made available by David Kroodsma and Timothy Hochberg from [SkyTruth](http://skytruth.org/).
+
 
 Notes on the data:
 
-The data features include the type of boat (troller, drifting long lines, fixed gear) and time series of position, speed, and course of the vessels.
-The intervals of data acquisition is not constant. There may be gaps when the vessels are not on the satellite’s field of “view”. It takes 90 mins for a low orbit satellite to go around the world, so we can expect gaps ~ 1h. 
-When there is good coverage the time intervals still vary from 2 seconds to 2 minutes, due to differences in satellite coverage around the world and signal interference.
+The data features include the type of vessel (troller, drifting long lines, fixed gear) and time series of position, speed, and course of each vessel.
+The intervals of data acquisition is not constant. There may be gaps when the vessels are not on the satellite’s field of “view”. It takes 90 mins for a low orbit satellite to go around the globe, so we can expect gaps of up to 1 hour. 
+
+When there is good coverage the time intervals still vary from 2 seconds to 2 minutes, due to differences in satellite communications around the world and signal interference.
 
 
 ### References
@@ -39,7 +39,7 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 - results: 
 	- best_reconstructions: Images of the recostructed tracks superimposed to maps.
 	- final_models: Best performing models, you can find the pickle files here on the '.pkl' files, as well as a summary of their performance on the '.txt' files.
-	- models_performance.png: 
+	- models_performance.png
 
 - src - The scripts used in the analysis
 
@@ -67,6 +67,6 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 		The images then will be kept on ../results/best_reconstructions
 
 	- results_analysis.py
-		Produces the models_performance.png on the results folder. This is a graph of the F1-scores for the different models.
+		Produces a graph of the F1-scores for the different models and stores it on ../results
 
 
