@@ -39,7 +39,8 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 
 ## Repo Structure
 
-- data/labeled - Will have the '.npz' labeled data files.
+- data/labeled - This folder has a sample file: "alex_crowd_sourced_Purse_seines.measures.labels.npz" copy the rest of the data files from [GFW training data](https://github.com/GlobalFishingWatch/training-data/tree/master/data/labeled) here. 
+
 - images - Images used on the web app
 
 - results: 
