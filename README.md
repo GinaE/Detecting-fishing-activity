@@ -17,7 +17,7 @@ Vessels fitted with AIS transceivers can be tracked by AIS base stations located
 
 <!-- ![Sat_AIS](/images/Satellite_AIS.png) -->
 
-| <img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/direct_AIS_limitations.png" width="300"> | <img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/Satellite_AIS.png" width="300"> |
+<img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/direct_AIS_limitations.png" width="300">        <img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/Satellite_AIS.png" width="300"> 
 
 20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
 
