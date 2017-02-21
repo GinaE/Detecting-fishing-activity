@@ -15,8 +15,9 @@ AIS system was put in place to guarantee the safety of vessels, it provides coll
 
 Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers [2]. 
 
-![Sat_AIS](/images/Satellite_AIS.png)
-Format: ![Alt Text](url)
+<!-- ![Sat_AIS](/images/Satellite_AIS.png) -->
+
+<img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/Satellite_AIS.png" width="48">
 
 20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
 
