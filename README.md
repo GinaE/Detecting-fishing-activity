@@ -13,7 +13,12 @@ Global Fishing Watch (GFW) is an organization that analyzes data from the Automa
 
 AIS system was put in place to guarantee the safety of vessels, it provides collision avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
 
-Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers. [2] 20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
+Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers [2]. 
+
+![Sat_AIS](/images/Satellite_AIS.png)
+Format: ![Alt Text](url)
+
+20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
 
 The data set was kindly made available by David Kroodsma and Timothy Hochberg from [SkyTruth](http://skytruth.org/).
 
@@ -29,7 +34,7 @@ When there is good coverage the time intervals still vary from 2 seconds to 2 mi
 ### References
 
 [1]  http://www.ipsnews.net/2016/09/new-public-website-offers-detailed-view-of-industrial-fishing/
-[2]  http://skytruth.org/, https://en.wikipedia.org/wiki/Automatic_identification_system
+[2]  ExactEarth Technologies, https://en.wikipedia.org/wiki/Automatic_identification_system
 
 ## Repo Structure
 
