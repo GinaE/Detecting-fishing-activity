@@ -9,15 +9,15 @@ Overfishing and illegal fishing are becoming big problems around the world. For 
 Global Fishing Watch (GFW) is an organization that analyzes data from the Automatic Identification System (AIS), which is collected by satellites and terrestrial receivers, to identify apparent fishing behavior based on the movement of vessels over time.
 
 
-### Data
+## Data
 
 AIS system was put in place to guarantee the safety of vessels, it provides collision avoidance and allow maritime authorities to track and monitor vessel movements. Each vessel periodically reports information including the vessel’s identity, type, position, course, speed, navigational status and other safety-related information.
 
-Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers [2]. 
+<img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/direct_AIS_limitations.png" width="300">  
 
-<!-- ![Sat_AIS](/images/Satellite_AIS.png) -->
+Vessels fitted with AIS transceivers can be tracked by AIS base stations located along coast lines or, when out of range of terrestrial networks, through a growing number of satellites that are fitted with special AIS receivers and manage to map the position of the vessels [2]. 
 
-<img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/direct_AIS_limitations.png" width="300">        <img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/Satellite_AIS.png" width="300"> 
+<img src="https://github.com/GinaE/Detecting-fishing-activity/blob/master/images/Satellite_AIS.png" width="300"> 
 
 20M of data points are produced per day this way. In this project we will have data that has been already labeled by different experts and using crowd sourcing methods. 
 
@@ -31,16 +31,17 @@ The intervals of data acquisition is not constant. There may be gaps when the ve
 
 When there is good coverage the time intervals still vary from 2 seconds to 2 minutes, due to differences in satellite communications around the world and signal interference.
 
-
 ### References
 
 [1]  http://www.ipsnews.net/2016/09/new-public-website-offers-detailed-view-of-industrial-fishing/
 [2]  ExactEarth Technologies, https://en.wikipedia.org/wiki/Automatic_identification_system
 
+## What you can do in this repo
+
 ## Repo Structure
 
-- data/labeled - This folder has a sample file: "alex_crowd_sourced_Purse_seines.measures.labels.npz" copy the rest of the data files from [GFW training data](https://github.com/GlobalFishingWatch/training-data/tree/master/data/labeled) here. 
 
+- data/labeled - This folder has a sample file: "alex_crowd_sourced_Purse_seines.measures.labels.npz", please copy the rest of the data files from [GFW training data](https://github.com/GlobalFishingWatch/training-data/tree/master/data/labeled) here. 
 - images - Images used on the web app
 
 - results: 
