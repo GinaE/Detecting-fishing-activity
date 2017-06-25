@@ -1,4 +1,4 @@
-The basic unit I select is an Ubuntu machine mp.xlarge, and ran the following commands:
+The unit I selected was an Ubuntu machine mp.xlarge, and ran the following commands:
 ```
 sudo apt install python
 
@@ -12,14 +12,14 @@ aws configure
 
 ```
 
-Then enter the correct values for:
+After doing that you will be promted to enter the following info:
 
 Access key ID: ______
 secret access key: _____
 region name: us-east-1
 output format: text
 
-If we can see the buckets, we are good setting up:
+If we can see the buckets, we are good with the set up:
 ```
 aws s3 ls
 ```
@@ -28,7 +28,7 @@ To copy full folders from the buckets
 ```
 aws s3 sync s3://bucket_name target_folder
 ```
-Install specific packages
+To install specific packages, use the regular pip.
 
 ```
 sudo pip install scipy
